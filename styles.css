@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  background-color: lightsalmon;
+  /* height: 100vh; */
+  /* max-height: 100vh; */
+}
+
+main {
+  padding: 2rem 2rem 2rem 2rem;
+  /* max-height: 100vh; */
+  /* height: 80%; */
+  height: 100vh;
+  width: 100%;
+  /* margin: 1rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+#title {
+  text-align: center;
+  color: darkred;
+  /* margin-bottom: 2rem; */
+}
+
+#regex-container {
+  grid-row: 1;
+  grid-column: 1 / span 2;
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+}
+
+#test-string-container {
+  grid-row: 2;
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+#matches-container {
+  grid-row: 2;
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+#matches-output {
+  border: 2px solid black;
+}
+
+.grid-box {
+  display: grid;
+  grid-template-rows: 1fr 9fr;
+  grid-template-columns: 1fr 1fr;
+  border: 2px solid black;
+  padding: 1rem;
+  margin: 1rem;
+  flex: 1 0;
+  gap: 1rem;
+}
+
+label {
+  margin-right: 1rem;
+}
+
+#matches-label,
+#test-string-label {
+  padding-bottom: 0.25rem;
+}
+
+.main-component-box {
+  border: 2px solid black;
+}
+
+textarea,
+p,
+input {
+  flex: 1 0;
+}
+
+textarea {
+  resize: none;
+}
+
+#regex-input {
+}
